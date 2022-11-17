@@ -12,7 +12,7 @@ function NewSkillList() {
                 <option>4</option>
                 <option>5</option>
             </select>
-            <input type='submit' value='Add Skill'></input>
+            <button type="submit">ADD SKILL</button>
         </form>
     )
 }
