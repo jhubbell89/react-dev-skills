@@ -1,7 +1,8 @@
 import {useState} from 'react';
 
 function NewSkillList() {
-    
+    const [skill, setSkill] = useState()
+    const [leval, setLevel] = useState()
     return (
         <form className="NewSkillForm">
             <label>Skill </label>
