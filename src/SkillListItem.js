@@ -1,3 +1,4 @@
+import './SkillListItem.css'
 
 function SkillListItem ({skill}) {
     return (

@@ -1,12 +1,18 @@
+import './NewSkillForm.css'
 import {useState} from 'react';
 
-function NewSkillList() {
-    const [skill, setSkill] = useState()
-    const [leval, setLevel] = useState()
+export default function NewSkillForm() {
+        const [newSkill, setNewSkill] = useState({
+            name: '',
+            level: 3,
+        });
+    //    const handleAddSkill = () => {
+        // setNewSkill([...newSkill])
+    //    }
     return (
-        <form className="NewSkillForm">
+        <form className="NewSkillForm" >
             <label>Skill </label>
-            <input type="text" id='skill' name='skill'></input>
+            <input type="text" id='skill' name='skill' ></input>
             <label>Level: </label>
             <select name='level' id='level'>
                 <option value={1}>1</option>
@@ -15,9 +21,8 @@ function NewSkillList() {
                 <option value={4}>4</option>
                 <option value={5}>5</option>
             </select>
-            <button type="submit">ADD SKILL</button>
+            <button >ADD SKILL</button>
         </form>
     )
 }
 
-export default NewSkillList
